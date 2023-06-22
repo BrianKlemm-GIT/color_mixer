@@ -1,2 +1,2 @@
 # color_mixer
-Input as many color's RGBs as you like and it will output the resulting color.
+Input as many colors in RGB format as you like and the program will output the resulting "mixed" color's RGB.
