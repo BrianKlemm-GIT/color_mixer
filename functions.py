@@ -1,6 +1,19 @@
 import classes
 
 
+def valid_number_of_colors(number_of_colors):  # Verifies the user inputs a valid number of colors
+    invalid_user_input = True
+    while invalid_user_input:
+        try:
+            user_input = int(number_of_colors)
+            if user_input > 0:
+                return user_input
+            else:
+                number_of_colors = input("Invalid Input: Please enter a whole number greater than 0. ")
+        except ValueError:
+            number_of_colors = input("Invalid Input: Please enter a whole number greater than 0. ")
+
+
 def data_entry_checker(color_value):  # Verifies the user has entered a valid RGB color value
     invalid_user_input = True
     while invalid_user_input:
@@ -9,9 +22,9 @@ def data_entry_checker(color_value):  # Verifies the user has entered a valid RG
             if user_input >= 0 and user_input <= 255:
                 return user_input
             else:
-                color_value = input("Invalid Input: Please input a number between 0 and 255 ")
+                color_value = input("Invalid Input: Please input a number between 0 and 255. ")
         except ValueError:
-            color_value = input("Invalid Input: Please input a number between 0 and 255 ")
+            color_value = input("Invalid Input: Please input a number between 0 and 255. ")
 
 
 def ask_for_color_rgbs(number_of_colors):  # Prompts the user to enter the RGB values of their colors and adds
