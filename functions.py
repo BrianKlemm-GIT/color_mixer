@@ -1,7 +1,7 @@
 import classes
 
-
-def valid_number_of_colors(number_of_colors):  # Verifies the user inputs a valid number of colors
+# Verifies the user inputs a valid number of colors
+def valid_number_of_colors(number_of_colors):
     invalid_user_input = True
     while invalid_user_input:
         try:
@@ -13,8 +13,8 @@ def valid_number_of_colors(number_of_colors):  # Verifies the user inputs a vali
         except ValueError:
             number_of_colors = input("Invalid Input: Please enter a whole number greater than 1. ")
 
-
-def data_entry_checker(color_value):  # Verifies the user has entered a valid RGB color value
+# Verifies the user has entered a valid RGB color value
+def data_entry_checker(color_value):
     invalid_user_input = True
     while invalid_user_input:
         try:
@@ -26,9 +26,8 @@ def data_entry_checker(color_value):  # Verifies the user has entered a valid RG
         except ValueError:
             color_value = input("Invalid Input: Please input a number between 0 and 255. ")
 
-
-def ask_for_color_rgbs(number_of_colors):  # Prompts the user to enter the RGB values of their colors and adds
-    # the entries into a dictionary.
+# Prompts the user to enter the RGB values of their colors and adds the entries into a dictionary.
+def ask_for_color_rgbs(number_of_colors):
     dict_of_colors = {}
     for i in range(0, number_of_colors):
         print("\nRGB values are denoted between 0 and 255.\n")
@@ -40,8 +39,8 @@ def ask_for_color_rgbs(number_of_colors):  # Prompts the user to enter the RGB v
 
     return dict_of_colors
 
-
-def color_object_creator(dict_of_colors):  # Constructs objects of class Color out of all the dictionary elements.
+# Constructs objects of class Color out of all the dictionary elements.
+def color_object_creator(dict_of_colors):
     list_of_color_objects = []
     for i in dict_of_colors:
         color_inputted = classes.Color(dict_of_colors[i][0], dict_of_colors[i][1], dict_of_colors[i][2])
@@ -49,8 +48,8 @@ def color_object_creator(dict_of_colors):  # Constructs objects of class Color o
 
     return list_of_color_objects
 
-
-def color_mixer(list_of_color_objects):  # Mixes the given colors and returns a Color object using a simple average.
+# Mixes the given colors and returns a Color object using a simple average.
+def color_mixer(list_of_color_objects):
     reds = 0
     greens = 0
     blues = 0

@@ -4,7 +4,8 @@ class Color:
         self.green = green
         self.blue = blue
 
-    def print_colors(self):  # I used this method for debugging
+    # I used this method for debugging
+    def print_colors(self):
         return (f"Red = {self.red}, Green = {self.green}, Blue = {self.blue}")
 
     def return_red_value(self):
