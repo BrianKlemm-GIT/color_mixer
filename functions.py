@@ -6,12 +6,12 @@ def valid_number_of_colors(number_of_colors):  # Verifies the user inputs a vali
     while invalid_user_input:
         try:
             user_input = int(number_of_colors)
-            if user_input > 0:
+            if user_input > 1:
                 return user_input
             else:
-                number_of_colors = input("Invalid Input: Please enter a whole number greater than 0. ")
+                number_of_colors = input("Invalid Input: Please enter a whole number greater than 1. ")
         except ValueError:
-            number_of_colors = input("Invalid Input: Please enter a whole number greater than 0. ")
+            number_of_colors = input("Invalid Input: Please enter a whole number greater than 1. ")
 
 
 def data_entry_checker(color_value):  # Verifies the user has entered a valid RGB color value
