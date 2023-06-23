@@ -1,9 +1,9 @@
 import functions
 
 print("""
----------------------------------------------------------
----------Welcome to Brian's Mediocre Color Mixer---------
----------------------------------------------------------
+----------------------------------------------------------
+--------------Welcome to Brian's Color Mixer--------------
+----------------------------------------------------------
 
 ***This script does not consider the volume of color mixed.
 Thus, if you are mixing paints you should use equal volumes of paint.***\n""")
