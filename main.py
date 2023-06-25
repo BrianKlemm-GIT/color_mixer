@@ -13,7 +13,8 @@ mix_colors = True
 while mix_colors:
 
     # Function prompts user for number of colors they would like to mix. Also, validates the user input.
-    number_of_colors = functions.valid_number_of_colors(input("How many colors would you like to mix? "))
+    number_of_colors = functions.data_entry_checker(input("How many colors would you like to mix? ")
+                                                    , "Invalid Input: Please enter a whole number greater than 1. ")
 
     # Collects and stores user inputted colors as tuples in a dictionary.
     dict_of_colors = (functions.ask_for_color_rgbs(number_of_colors))
